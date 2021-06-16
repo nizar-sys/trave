@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fafafa;
+  font-family: "Poppins";
+  height: 1800px;
+}
+
+/* img style */
+.hero {
+  height: 600px;
+}
+
+.hero .hero_img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+/* end style img */
+
+/* style title */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px 20px;
+}
+
+.detail {
+  padding: 20px;
+}
+
+.rating {
+  font-size: 1.5rem;
+  text-align: center;
+  box-sizing: border-box;
+  width: 70px;
+  border: 3px solid black;
+  border-radius: 10px;
+  float: right;
+}
+
+.rating:hover {
+  transition: all 0.2s;
+  color: #ffa834;
+}
+
+.desc {
+  margin-top: 1rem;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+}
+
+/* end title stye */
+
+/* gap */
+.gap {
+  margin: 0 auto 20px;
+  max-width: 100%;
+  border: 1px solid #ffa834;
+  border-width: 1rem;
+}
+/* gap end */
+
+.title {
+  transition: all 0.4s;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.title:hover {
+  color: #ffa834;
+  transition: all 0.3s;
+}
+
+.maps {
+  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.similar-resto{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.resto-card {
+  width: 380px;
+  position: relative;
+  box-shadow: 0 2px 7px #dfdfdf;
+  margin: 50px auto;
+  background: #fafafa;
+}
+.resto-tumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  padding: 50px;
+  background: #f0f0f0;
+}
+
+.resto-tumb img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.resto-details {
+  padding: 30px;
+}
+.resto-details h4 a {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  color: #363636;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.resto-details h4 a:hover {
+  color: #fbb72c;
+}
+
+.resto-details p {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 18px;
+  color: #999;
+}
+
+.resto-bottom-details {
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.resto-bottom-details div {
+  float: left;
+  width: 50%;
+}
+
+.resto-price {
+  font-size: 18px;
+  color: #fbb72c;
+  font-weight: 600;
+}
+
+.resto-price small {
+  font-size: 80%;
+  font-weight: 400;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.resto-links {
+  text-align: right;
+}
+
+.resto-links a {
+  display: inline-block;
+  margin-left: 5px;
+  color: #e1e1e1;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.resto-links a:hover {
+  color: #fbb72c;
+}
+
+/* footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #ffa834;
+  width: 100%;
+  height: 18vh;
+}
+
+.footer_title:hover {
+  color: #fafafa;
+}
+.money {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.btn {
+  float: right;
+  background-color: white;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: transparent;
+  color: #fafafa;
+  transition: all 0.4s;
+  box-shadow: 1px 1px 3px black;
+}
+/* footer end */
+
+/* responsive */
+@media screen and (max-width: 676px) {
+  .hero {
+    height: 400px;
+  }
+  .maps {
+    height: 50vh;
+  }
+  .similar-resto{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+/* responsive end */
